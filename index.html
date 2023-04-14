@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <!--=============== BOXICONS ===============-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!--=============== GOOGLE FONTS (Poppins) ===============-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>A&M Records</title>
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">A&M Records<i class="bx bxs-disc"></i></a>
+        <div class="nav__menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">
+                <i class="bx bx-home-alt-2"></i>
+                <span>Home</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                <i class="bx bxs-user"></i>
+                <span>About us</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#records" class="nav__link">
+                <i class="bx bx-store"></i>
+                <span>Our records</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="contact" class="nav__link">
+                <i class="bx bx-chat"></i>
+                <span>Contact</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <!--==================== HERO ====================-->
+      <section class="section hero" id="hero">
+        <div class="hero__data">
+          <h1 class="hero__title">
+            Listen<br />
+            To Your <br />World
+          </h1>
+          <a href="#about" class="button hero__button"> About Us </a>
+          <!-- <button type="button" class="button hero__button">About us</button> -->
+        </div>
+      </section>
+
+      <!--==================== ABOUT ====================-->
+      <section class="section about" id="about">
+        <div class="container about__container">
+          <h2 class="section__title visually-hidden">About us</h2>
+          <div class="about__left">
+            <img src="images/team.png" alt="Our team" />
+          </div>
+          <div class="about__right">
+            <p>
+              A&M Records develops initiatives, experiences and programming to
+              actualize and advance our core diversity, equity and inclusion
+              values and beliefs. We are intentionally focused on identifying
+              scalable solutions to systemic issues that impact our global
+              network of employees, artists, songwriters, creatives, composers,
+              fans, partners and industry peers.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== OUR RECORDS ====================-->
+      <section class="section records" id="records">
+        <div class="container">
+          <h2 class="section__title">Our records</h2>
+          <div class="records__container">
+            <article class="record__card">
+              <img
+                src="images/light.jpg"
+                alt="light dakhabrakha"
+                class="record__img"
+              />
+              <div class="record__data">
+                <p class="record__artist">DakhaBrakha</p>
+                <p class="record__title">Light</p>
+                <p class="record__price">$10.0</p>
+              </div>
+              <button type="submit" class="button record__button">
+                Add to cart
+              </button>
+            </article>
+            <article class="record__card">
+              <img
+                src="images/brothers_in_arms.jpg"
+                alt="brothers_in_arms dire_straits"
+                class="record__img"
+              />
+              <div class="record__data">
+                <p class="record__artist">Dire Straits</p>
+                <p class="record__title">Brothers in arms</p>
+                <p class="record__price">$18.80</p>
+              </div>
+              <button type="submit" class="button record__button">
+                Add to cart
+              </button>
+            </article>
+            <article class="record__card">
+              <img
+                src="images/doolitle.jpg"
+                alt="doolitle pixies"
+                class="record__img"
+              />
+              <div class="record__data">
+                <p class="record__artist">Pixies</p>
+                <p class="record__title">Doolitle</p>
+                <p class="record__price">$9.20</p>
+              </div>
+              <button type="submit" class="button record__button">
+                Add to cart
+              </button>
+            </article>
+            <article class="record__card">
+              <img
+                src="images/sehnsucht.jpg"
+                alt="sehnsucht rammstein"
+                class="record__img"
+              />
+              <div class="record__data">
+                <p class="record__artist">Rammstein</p>
+                <p class="record__title">Sehnsucht</p>
+                <p class="record__price">$11.0</p>
+              </div>
+              <button type="submit" class="button record__button">
+                Add to cart
+              </button>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
