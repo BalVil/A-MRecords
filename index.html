@@ -53,7 +53,7 @@
               </a>
             </li>
             <li class="nav__item">
-              <a href="contact" class="nav__link">
+              <a href="#contact" class="nav__link">
                 <i class="bx bx-chat"></i>
                 <span>Contact</span>
               </a>
@@ -71,7 +71,6 @@
             To Your <br />World
           </h1>
           <a href="#about" class="button hero__button"> About Us </a>
-          <!-- <button type="button" class="button hero__button">About us</button> -->
         </div>
       </section>
 
@@ -79,10 +78,10 @@
       <section class="section about" id="about">
         <div class="container about__container">
           <h2 class="section__title visually-hidden">About us</h2>
-          <div class="about__left">
+          <div class="about__first">
             <img src="images/team.png" alt="Our team" />
           </div>
-          <div class="about__right">
+          <div class="about__second">
             <p>
               A&M Records develops initiatives, experiences and programming to
               actualize and advance our core diversity, equity and inclusion
@@ -101,62 +100,125 @@
           <h2 class="section__title">Our records</h2>
           <div class="records__container">
             <article class="record__card">
-              <img
-                src="images/light.jpg"
-                alt="light dakhabrakha"
-                class="record__img"
-              />
+              <div class="record__thumb">
+                <img
+                  src="images/light.jpg"
+                  alt="light dakhabrakha"
+                  class="record__img"
+                />
+                <div class="record__overlay">
+                  <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="button button-primary"
+                    >Details</a
+                  >
+                </div>
+              </div>
               <div class="record__data">
                 <p class="record__artist">DakhaBrakha</p>
                 <p class="record__title">Light</p>
                 <p class="record__price">$10.0</p>
               </div>
-              <button type="submit" class="button record__button">
+              <button
+                type="submit"
+                class="button record__button"
+                aria-label="buy"
+              >
                 Add to cart
               </button>
             </article>
             <article class="record__card">
-              <img
-                src="images/brothers_in_arms.jpg"
-                alt="brothers_in_arms dire_straits"
-                class="record__img"
-              />
+              <div class="record__thumb">
+                <img
+                  src="images/brothers_in_arms.jpg"
+                  alt="brothers_in_arms dire_straits"
+                  class="record__img"
+                />
+                <div class="record__overlay">
+                  <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="button button-primary"
+                    >Details</a
+                  >
+                </div>
+              </div>
+
               <div class="record__data">
                 <p class="record__artist">Dire Straits</p>
                 <p class="record__title">Brothers in arms</p>
                 <p class="record__price">$18.80</p>
               </div>
-              <button type="submit" class="button record__button">
+              <button
+                type="submit"
+                class="button record__button"
+                aria-label="buy"
+              >
                 Add to cart
               </button>
             </article>
             <article class="record__card">
-              <img
-                src="images/doolitle.jpg"
-                alt="doolitle pixies"
-                class="record__img"
-              />
+              <div class="record__thumb">
+                <img
+                  src="images/doolitle.jpg"
+                  alt="doolitle pixies"
+                  class="record__img"
+                />
+                <div class="record__overlay">
+                  <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="button button-primary"
+                    >Details</a
+                  >
+                </div>
+              </div>
+
               <div class="record__data">
                 <p class="record__artist">Pixies</p>
                 <p class="record__title">Doolitle</p>
                 <p class="record__price">$9.20</p>
               </div>
-              <button type="submit" class="button record__button">
+              <button
+                type="submit"
+                class="button record__button"
+                aria-label="buy"
+              >
                 Add to cart
               </button>
             </article>
             <article class="record__card">
-              <img
-                src="images/sehnsucht.jpg"
-                alt="sehnsucht rammstein"
-                class="record__img"
-              />
+              <div class="record__thumb">
+                <img
+                  src="images/sehnsucht.jpg"
+                  alt="sehnsucht rammstein"
+                  class="record__img"
+                />
+                <div class="record__overlay">
+                  <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="button button-primary"
+                    >Details</a
+                  >
+                </div>
+              </div>
+
               <div class="record__data">
                 <p class="record__artist">Rammstein</p>
                 <p class="record__title">Sehnsucht</p>
                 <p class="record__price">$11.0</p>
               </div>
-              <button type="submit" class="button record__button">
+              <button
+                type="submit"
+                class="button record__button"
+                aria-label="buy"
+              >
                 Add to cart
               </button>
             </article>
@@ -164,5 +226,67 @@
         </div>
       </section>
     </main>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__contact">
+          <h2 class="footer__title visually-hidden">Contact us</h2>
+          <button type="button" class="button" data-modal-open>
+            Contact us
+          </button>
+        </div>
+      </div>
+    </footer>
+    <div class="modal__container modal__container-hidden" data-modal>
+      <div class="modal">
+        <button
+          type="button"
+          class="cross-btn modal__cross-btn"
+          data-modal-close
+        >
+          <svg
+            class="modal__cross-svg"
+            width="30"
+            height="30"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="m7.975 8-.699.701 3.149 3.149 3.15 3.15-3.138 3.138L7.3 21.275l.712.713.713.712 3.137-3.137L15 16.425l3.138 3.138 3.137 3.137.713-.712.712-.713-3.137-3.137L16.425 15l3.15-3.15 3.15-3.15-.713-.712-.712-.713-3.15 3.15-3.15 3.15-3.138-3.138C10.137 8.712 8.713 7.3 8.699 7.3c-.014 0-.34.315-.724.7"
+              fill-rule="evenodd"
+            />
+          </svg>
+        </button>
+        <p class="modal__title">We'd love to hear from you</p>
+        <form class="form" action="">
+          <label class="form__group"
+            ><span class="form__label">Name</span>
+            <div class="form__icon-box">
+              <input type="text" class="form__input" name="name" />
+              <i class="bx bxs-user"></i>
+            </div>
+          </label>
+          <label class="form__group"
+            ><span class="form__label">Email</span>
+            <div class="form__icon-box">
+              <input type="email" class="form__input" name="email" />
+              <i class="bx bxs-envelope"></i>
+            </div>
+          </label>
+          <label class="form__group"
+            ><span class="form__label">Text</span>
+            <textarea
+              name="message"
+              placeholder="Your message here.."
+              class="form__input form__textarea"
+            ></textarea>
+          </label>
+          <div class="form-button">
+            <button type="submit" class="button button-primary">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="./scripts/changeBcgHeader.js"></script>
+    <script src="./scripts/showModal.js"></script>
+    <script src="./scripts/showFormData.js"></script>
   </body>
 </html>
