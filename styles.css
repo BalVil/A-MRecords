@@ -497,6 +497,15 @@ input:-webkit-autofill:focus {
     display: none;
   }
 
+  .hero {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(47, 48, 58, 0.3),
+        rgba(47, 48, 58, 0.6)
+      ),
+      url(./images/hero_player@2x.jpg);
+  }
+
   .hero__title {
     font-size: 3rem;
   }

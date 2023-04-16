@@ -79,7 +79,13 @@
         <div class="container about__container">
           <h2 class="section__title visually-hidden">About us</h2>
           <div class="about__first">
-            <img src="images/team.png" alt="Our team" />
+            <picture>
+              <source
+                srcset="./images/team.png 1x, ./images/team@2x.png 2x"
+                type="image/png"
+              />
+              <img src="images/team.png" alt="Our team" />
+            </picture>
           </div>
           <div class="about__second">
             <p>
@@ -101,11 +107,14 @@
           <div class="records__container">
             <article class="record__card">
               <div class="record__thumb">
-                <img
-                  src="images/light.jpg"
-                  alt="light dakhabrakha"
-                  class="record__img"
-                />
+                <picture>
+                  <source
+                    srcset="./images/light.jpg 1x, ./images/light@2x.jpg 2x"
+                    type="image/jpeg"
+                  />
+                  <img src="images/light.jpg" alt="light dakhabrakha" />
+                </picture>
+
                 <div class="record__overlay">
                   <a
                     href="#"
@@ -131,11 +140,20 @@
             </article>
             <article class="record__card">
               <div class="record__thumb">
-                <img
-                  src="images/brothers_in_arms.jpg"
-                  alt="brothers_in_arms dire_straits"
-                  class="record__img"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/brothers_in_arms.jpg    1x,
+                      ./images/brothers_in_arms@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                  />
+                  <img
+                    src="images/brothers_in_arms.jpg"
+                    alt="brothers_in_arms dire_straits"
+                  />
+                </picture>
+
                 <div class="record__overlay">
                   <a
                     href="#"
@@ -162,11 +180,17 @@
             </article>
             <article class="record__card">
               <div class="record__thumb">
-                <img
-                  src="images/doolitle.jpg"
-                  alt="doolitle pixies"
-                  class="record__img"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/doolitle.jpg    1x,
+                      ./images/doolitle@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                  />
+                  <img src="images/doolitle.jpg" alt="doolitle pixies" />
+                </picture>
+
                 <div class="record__overlay">
                   <a
                     href="#"
@@ -193,11 +217,17 @@
             </article>
             <article class="record__card">
               <div class="record__thumb">
-                <img
-                  src="images/sehnsucht.jpg"
-                  alt="sehnsucht rammstein"
-                  class="record__img"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/sehnsucht.jpg    1x,
+                      ./images/sehnsucht@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                  />
+                  <img src="images/sehnsucht.jpg" alt="sehnsucht rammstein" />
+                </picture>
+
                 <div class="record__overlay">
                   <a
                     href="#"
